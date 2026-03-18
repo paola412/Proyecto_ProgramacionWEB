@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dona Sangre - Una donación, muchas vidas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor header-contenido">
+            <a href="#" class="logo">🩸 Dona Sangre</a>
+            <nav class="nav">
+                <ul class="nav-lista">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#donacion">¿Qué es donar?</a></li>
+                    <li><a href="#requisitos">Requisitos</a></li>
+                    <li><a href="#donde">Dónde donar</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Carrusel -->
+        <section id="inicio" class="carrusel">
+            <div class="carrusel-contenedor">
+                <div class="carrusel-slides">
+                    <div class="slide activo">
+                        <div class="slide-imagen slide-1"></div>
+                        <div class="slide-texto">
+                            <h2>Una donación salva hasta 3 vidas</h2>
+                            <p>Tu sangre puede dar una segunda oportunidad a quienes más lo necesitan.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-imagen slide-2"></div>
+                        <div class="slide-texto">
+                            <h2>Donar es seguro y rápido</h2>
+                            <p>El proceso dura unos 15 minutos y está supervisado por profesionales.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-imagen slide-3"></div>
+                        <div class="slide-texto">
+                            <h2>¿Cuándo fue tu última donación?</h2>
+                            <p>Los hombres pueden donar cada 3 meses; las mujeres, cada 4 meses.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carrusel-btn anterior" aria-label="Slide anterior">‹</button>
+                <button class="carrusel-btn siguiente" aria-label="Slide siguiente">›</button>
+                <div class="carrusel-indicadores"></div>
+            </div>
+        </section>
+
+        <!-- Sección: ¿Qué es donar? -->
+        <section id="donacion" class="seccion">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">¿Qué es la donación de sangre?</h2>
+                <p class="texto-seccion">
+                    La donación de sangre es un acto voluntario y altruista que permite salvar vidas. La sangre donada se utiliza en operaciones, accidentes, tratamientos contra el cáncer y muchas otras situaciones. No existe un sustituto artificial de la sangre humana: <strong>solo las donaciones hacen posible que los hospitales puedan atender a los pacientes.</strong>
+                </p>
+                <div class="tarjetas">
+                    <div class="tarjeta">
+                        <span class="tarjeta-icono">❤️</span>
+                        <h3>Salva vidas</h3>
+                        <p>Cada donación puede ayudar a hasta 3 personas.</p>
+                    </div>
+                    <div class="tarjeta">
+                        <span class="tarjeta-icono">⏱️</span>
+                        <h3>Rápido</h3>
+                        <p>Todo el proceso suele durar entre 15 y 20 minutos.</p>
+                    </div>
+                    <div class="tarjeta">
+                        <span class="tarjeta-icono">🛡️</span>
+                        <h3>Seguro</h3>
+                        <p>Material estéril y personal cualificado en todo momento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Requisitos -->
+        <section id="requisitos" class="seccion seccion-alterna">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Requisitos para donar</h2>
+                <ul class="lista-requisitos">
+                    <li>Tener entre 18 y 65 años (hasta 70 si ya has donado antes).</li>
+                    <li>Pesar más de 50 kg.</li>
+                    <li>Gozar de buena salud en el momento de la donación.</li>
+                    <li>No haber donado en los últimos 2-3 meses (hombres) o 3-4 meses (mujeres).</li>
+                    <li>Presentar DNI o documento de identidad.</li>
+                </ul>
+                <p class="texto-seccion">Si tienes dudas sobre si puedes donar (medicación, viajes, tatuajes recientes), consulta en tu centro de transfusión. Ellos te orientarán.</p>
+            </div>
+        </section>
+
+        <!-- Sección: Dónde donar -->
+        <section id="donde" class="seccion">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Dónde puedo donar</h2>
+                <p class="texto-seccion">
+                    Puedes donar en hospitales, centros de salud y unidades móviles de tu comunidad. Busca en internet "<strong>donar sangre</strong>" + tu ciudad o comunidad autónoma para encontrar el centro más cercano y sus horarios.
+                </p>
+                <div class="cta-caja">
+                    <p><strong>¿Listo para dar el paso?</strong> Localiza tu centro de transfusión y reserva cita cuando te venga bien.</p>
+                    <a href="https://www.donantesdesangre.org/" class="boton" target="_blank" rel="noopener">Buscar centros de donación</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Contacto -->
+        <section id="contacto" class="seccion seccion-alterna">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Contacto</h2>
+                <p class="texto-seccion">Si quieres más información o organizar una campaña de donación en tu centro educativo o empresa, escríbenos.</p>
+                <form class="formulario-contacto" action="#" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required placeholder="¿En qué podemos ayudarte?"></textarea>
+                    <button type="submit" class="boton">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <p>© Campaña de donación de sangre — Con fines educativos y de concienciación.</p>
+            <p class="footer-nota">En caso de emergencia o para donar, contacta con el centro de transfusión de tu zona.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
